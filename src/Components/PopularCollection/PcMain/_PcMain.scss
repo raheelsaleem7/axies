@@ -1,0 +1,167 @@
+@import "../../../Assests/Fonts/variable";
+
+.pcmain {
+
+    .pc-main-container {
+        display: flex;
+        justify-content: space-between;
+        @media screen and (max-width:480px) {
+           flex-wrap: wrap;
+           justify-content: center;
+             }
+             @media screen and (max-width:768px) {
+                flex-wrap: wrap;
+                justify-content: center;
+                  }
+                  @media screen and (max-width:1024px) {
+                    flex-wrap: wrap;
+                    justify-content: center;
+                      }
+       
+    .collection-content {
+             background: $iconBack;
+             width: 416px;
+             border-radius: 17px;
+             @media screen and (max-width:480px) {
+               width: 90%;
+               margin-top: 10px;
+                 }
+                 @media screen and (max-width:768px) {
+                   
+               margin-top: 10px;
+                      }
+                      @media screen and (max-width:1024px) {
+                   
+                        margin: 10px;
+                               }
+                      
+         .inner_collection {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            justify-content: space-evenly;
+        
+            .for_img {
+
+                img {
+                    width: 62px;
+                    border-radius: 24px;
+                }
+            }
+            .badge {
+                display: inline-block;
+                width: 18px;
+                height: 18px;
+                line-height: 18px;
+                object-fit: cover;
+                text-align: center;
+                border-radius: 50%;
+                background-color: $fireSvg;
+                padding: 0 !important;
+                position: relative;
+                right: 27px;
+                top: 16px;
+            }
+            .for_text {
+            cursor: pointer;
+                .creative {
+
+                    h4 {
+                      color: white;
+                      font-family: $outfitFont;
+                      font-weight: 600;
+                      font-size: 19px;
+                      transition: .5s;
+                      &:hover {
+                          color:$buttonBorder
+                      }
+                    }
+                }
+                .ralph {
+                    display: flex;
+                    align-items: center;
+                    span {
+                        color: $creatorClr;
+                        font-family: $outfitFont;
+                        font-size: 13px;
+                    }
+                    p {
+                        color: $ralphclr;
+                        font-family: $outfitFont;
+                        font-weight: 600;
+                        margin-left: 8px;
+                        transition: .5s;
+                        &:hover {
+                            color:$buttonBorder
+                        }
+                    }
+                }
+            }
+            .health {
+                display: flex;
+                background: $priceColor;
+                width: 64px;
+                align-items: end;
+                padding: 5px;
+                justify-content: space-evenly;
+                border-radius: 8px;
+                align-self: flex-start;
+                .heart-icon {
+
+                    svg {
+                      width: 14px;
+                      fill: white;
+                    }
+                }
+                .number {
+                    p {
+                        font-family:$outfitFont;
+                        color: white;
+                      }
+                }
+              
+            }
+         }
+
+         .for_picture {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            .left_img {
+
+                img {
+                    border-radius: 22px;
+                    padding: 10px;
+                    height: 272px;
+                    width: 98%;
+                }
+            }
+            .right_img {
+
+                .top_img {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-right: 19px;
+
+                    .inner_img {
+
+                        img {
+                            border-radius: 15px;
+                            height: 90px;
+                            width: 100%;
+                        }
+                    }
+                }
+                .inner_img2 {
+
+                    img {
+                        border-radius: 15px;
+                        width: 92%;
+                        height: 162px;
+                    }
+                }
+            }
+         }
+    }
+  }
+}

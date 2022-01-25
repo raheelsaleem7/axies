@@ -1,0 +1,136 @@
+@import '../../Assests/Fonts/variable';
+.footer {
+        background: $footerBg;
+        padding: 82px 20px;
+    .footer_container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 auto;
+        max-width: 1440px;
+        @media screen and (max-width:480px) {
+          display: grid;
+             }
+            .logo {
+
+                img {
+
+                }
+                p {
+                    color: white;
+                    font-family:$outfitFont;
+                    font-size: 14px;
+                    @media screen and (max-width:480px) {
+                        font-size: 12px;
+                         }
+                }
+            }
+
+            .my-account {
+                @media screen and (max-width:480px) {
+                  margin-top: 15px;
+                     }
+                h5 {
+                    color: white;
+                    font-family: $outfitFont;
+                    font-size: 19px;
+                    letter-spacing: 1px;
+                }
+
+                ul {
+                    list-style-type: none;
+                  li {
+                    color: white;
+                    font-family:$outfitFont;
+                    font-size: 14px;
+                    padding: 8px 1px;
+                    transition: .5s;
+                    cursor:pointer;
+                    @media screen and (max-width:480px) {
+                        font-size: 12px;
+                         }
+                   
+                   &:hover {
+                      color: $buttonBorder;
+                      font-family: $outfitFont;
+                      text-decoration: underline;
+                   }
+                  }  
+                }
+            }
+            .subscribe {
+
+                h5 {
+                    color: white;
+                    font-family: $outfitFont;
+                    font-size: 19px;
+                    letter-spacing: 1px;
+                }
+                .form {
+                    padding: 15px 1px;
+                    form {
+                         display: flex;
+                         align-items: center;
+                         border-radius: 10px;
+                         border: 1px solid rgba(138, 138, 160, 0.3);
+                        input {
+                            background: transparent;
+                            outline: none;
+                            padding: 19px 17px;
+                            border: none;
+                            &::placeholder {
+                             color: $placeholderClr;
+                          }
+                        }
+                        .btn {
+                            display: flex;
+                            align-self: center;
+                            position: relative;
+                            .for_svg {
+                                position: absolute;
+                                right: 15px;
+                                top: 15px;
+
+                                svg {
+                                    width: 20px;
+                                    fill: white;
+                                    }
+                            }
+                        
+                            button {
+                                 background: $buttonBorder;
+                                 outline: none;
+                                 border: none;
+                                 padding: 27px 25px;
+                                 border-radius: 0px 10px 10px 0px
+                            }
+                        }
+                    }
+                }
+                             .social {
+
+                                padding: 8px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+                               
+                                .social-icons {
+                                    display: flex;
+                                    background: $iconBack;
+                                    padding: 7px;
+                                    border-radius: 4px;
+                                    transition: .5s;
+                                    cursor: pointer;
+                                    svg {
+                                        fill: white;
+                                        width: 20px;
+                                       
+                                    }
+                                    &:hover {
+                                        background: $buttonBorder;
+                                    }
+                                }
+                             }
+            }
+    }
+}

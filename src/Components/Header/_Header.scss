@@ -1,0 +1,164 @@
+@import "../../Assests/Fonts/variable";
+
+.header {
+    .header_container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;  
+        padding: 10px;
+        border-bottom: 1px solid $headerBorder;
+        margin: 0 auto;
+        max-width: 1440px;
+        @media screen and (max-width:480px) {
+           max-width: 480px;
+        }
+        @media screen and (max-width:768px) {
+           
+         }
+        .dropdown {
+
+            ul {
+                display: flex;
+                list-style-type: none;
+               
+             li {
+
+               a {
+                color: $ulColor;
+                text-decoration: none;
+                margin-right: 31px;
+                font-family: $ulFont;
+                font-weight: 900;
+                font-size: 18px;
+               } 
+             }   
+            }
+            @media screen and (max-width:480px) {
+                display:none;
+            }
+            @media screen and (max-width:768px) {
+                display:none;
+            }
+        }
+        .search {
+            @media screen and (max-width:480px) {
+                display:none;
+            }
+            @media screen and (max-width:768px) {
+                display:none;
+            }
+            @media screen and (max-width:1024px) {
+                display:none;
+            }
+            svg {
+                width: 20px;
+                fill: white;
+            }
+        }
+        .btn {
+            display: flex;
+            align-items: center;
+            border: 2px solid $buttonBorder;
+            padding: 10px 25px;
+            border-radius: 33px;
+            cursor: pointer;
+            transition: .7s;
+            @media screen and (max-width:480px) {
+                display: none;
+            }
+            @media screen and (max-width:768px) {
+                display: none;
+            }
+            .for_icon {
+                svg {
+                    width: 16px;
+                    fill: white;
+                }
+            }
+            button {
+                border: none;
+                background: transparent;
+                outline: none;
+                color: white;
+                margin-left: 14px;
+              
+            }
+            &:hover {
+
+                svg {fill:$hoverColor}
+                button {color:$hoverColor}
+                background-color: white;
+                border:white;
+                outline: none;
+            }
+        }
+        .icon {
+            display: flex;         
+                @media screen and (max-width:480px) {
+                    display: none;
+                }
+                @media screen and (max-width:768px) {
+                    display: none;
+                }
+
+         .for_icon {
+           background-color: $iconBack;
+           margin-left: 12px;
+           padding: 7px;
+           border-radius: 5px;
+           align-self: center;
+            svg {
+                width: 20px;
+                fill: white;
+            }
+         }
+         .for_icon2 {
+            background-color: $iconBack;
+            margin-left: 12px;
+            padding: 7px;
+            border-radius: 5px;
+            align-self: center;
+         }
+        }
+        .announcement_header {
+            .menu_bar {
+                display: flex;
+            flex-direction: column;
+            cursor: pointer;
+            transition: .3s;
+            display: none;
+            @media screen and (max-width:480px) {
+                display:block;
+                align-self: center;
+                display: flex;
+              
+           }
+           @media screen and (max-width:768px) {
+            display:block;
+            align-self: center;
+            display: flex;
+          
+       }
+           span {
+            background-color: white;
+            width: 18px;
+            height: 2px;
+            margin-top: 2px;
+          
+       }
+            }
+            .active-steps {
+       
+                @media screen and (max-width:480px) {
+                display: block;
+              }
+            }
+            .not-active {
+         
+                @media screen and (max-width:480px) {
+                    display: none;
+                }
+            }
+        }
+    }   
+}

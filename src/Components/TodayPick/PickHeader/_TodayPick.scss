@@ -1,0 +1,166 @@
+@import '../../../Assests/Fonts/variable';
+
+.pick {
+
+    .pick_container {
+
+        .pick_header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+            .header_content {
+
+                h2 {
+                    color: white;
+                    font-family: $outfitFont;
+                    font-size: 30px;
+                    letter-spacing: 1px;
+                    @media screen and (max-width:480px) {
+                        font-size: 15px;
+                   }
+                }
+            }
+            .explore2 {
+
+                p {
+                    font-weight: bold;
+                    font-size: 14px;
+                    line-height: 20px;
+                    letter-spacing: 0.1em;
+                    font-family: $latoFont;
+                    text-decoration: none;
+                    color: white;
+                    cursor: pointer;
+                    @media screen and (max-width:480px) {
+                        font-size: 10px;
+                   }
+                    &::after {
+                        content: '';
+                       display: block;
+                        width: 123px;
+                         height: 1px;
+                        background: linear-gradient( 216.56deg , #E250E5 5.32%, #4B50E6 94.32%);
+                        @media screen and (max-width:480px) {
+                            width: 87px;
+                       }
+                    }
+                    &:hover {
+                        background: linear-gradient(to right, #E250E5,#4B50E6,#E250E5);
+                        background-clip: text;
+                        -webkit-background-clip: text;
+                        font-weight: 700;
+                        background-size: 200% 200%;
+                        animation: rainbow 2s ease-in-out infinite;
+                        color: var(--primary-color2);
+                        transition: color .2s ease-in-out;
+                        @keyframes rainbow {
+                            0% {
+                                background-position: left;
+                            }
+                            50% {
+                                background-position: right;
+                            }
+                            100% {
+                                background-position: left;
+                            }
+                        }
+                    }
+                    
+          
+                }
+            }
+        }
+                 .big { 
+                     display: flex;
+                      align-items: center;
+                     justify-content: space-between;
+                     padding: 10px;
+                     @media screen and (max-width:480px) {
+                     display: grid;
+                     grid-template-columns: auto;
+                   }
+                 .header_main {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    @media screen and (max-width:480px) {
+                        display: grid;
+                        grid-template-columns: auto auto;
+                      }
+                
+                    .category {
+                       display: flex;
+                       align-items: center;
+                       border: 1px solid $categoryBorder;
+                       justify-content: space-between;
+                       padding: 9px 16px;
+                       border-radius: 25px;
+                       align-items: center;
+                       margin-left: 10px;
+                       cursor: pointer;
+                       @media screen and (max-width:480px) {
+                       margin-top: 10px;
+                      }
+                       &:hover {
+                           border: 1px solid $salColor;
+                       }
+                        .svg-icon {
+                            margin-right: 12px;
+                            svg {
+
+                            }
+                        }
+                        .content_name {
+                            
+                          button {
+                               color: white;
+                               font-family: $outfitFont;
+                               font-size: 15px;
+                               border: none;
+                               outline: none;
+                               background:transparent;
+                        }
+                      }
+                    }
+                 }
+                 .other_half {
+
+                     .category {
+                        display: flex;
+                        align-items: center;
+                        border: 1px solid $categoryBorder;
+                        justify-content: space-between;
+                        padding: 9px 16px;
+                        border-radius: 25px;
+                        align-items: center;
+                        cursor: pointer;
+                        @media screen and (max-width:480px) {
+                            margin-top: 10px;
+                           }
+                        &:hover {
+                            border: 1px solid $salColor;
+                        }
+                      .svg-icon {
+                        margin-right: 12px;
+                        svg {
+
+                        }
+                      }
+                      .content_name {
+
+                        button {
+                            color: white;
+                            font-family: $outfitFont;
+                            font-size: 15px;
+                            border: none;
+                            outline: none;
+                            background:transparent;
+                          
+                     }
+                      }
+                     }
+                    }
+                }
+    }
+}

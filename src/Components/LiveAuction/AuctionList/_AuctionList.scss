@@ -1,0 +1,240 @@
+@import '../../../Assests/Fonts/variable';
+
+.list-auction {
+
+    .container {
+        display: flex;
+        align-content: center;
+        justify-content: space-between;
+        padding: 18px;
+        @media screen and (max-width:480px) {
+          flex-wrap: wrap;
+          justify-content: center;
+     }
+     @media screen and (max-width:768px) {
+      flex-wrap: wrap;
+  }
+  @media screen and (max-width:1024px) {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-evenly;
+}
+@media screen and (max-width:1115px) {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+        .content {
+                 background: $iconBack;
+                  width: 317px;
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  padding: 21px 1px;
+                  height: 407px;
+                  border-radius: 17px;
+                  cursor: pointer;
+                  transition: .7s;
+                  overflow: hidden;
+                  @media screen and (max-width:480px) {
+                   margin-top: 10px;
+               }
+               @media screen and (max-width:1024px) {
+                margin-top: 10px;
+            }
+            @media screen and (max-width:1115px) {
+              margin-top: 10px;
+          }
+                  &:hover .img-content .place-bid {
+                   
+                    display: flex;
+                   
+                  }
+            .img-content {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                background-position: center;
+                background-repeat: no-repeat;
+                height: 278px;
+                width: 268px;
+                padding: 7px;
+                border-radius: 25px;
+                transition: .7s;
+              
+                &:hover {
+                    transform: scale(1.1);
+                  }
+                .health {
+                    display: flex;
+                    background: $priceColor;
+                    width: 64px;
+                    align-items: end;
+                    padding: 5px;
+                    justify-content: space-evenly;
+                    border-radius: 8px;
+                    align-self: self-end;
+                    .heart-icon {
+
+                        svg {
+                          width: 14px;
+                          fill: white;
+                        }
+                    }
+                    .number {
+                        p {
+                            font-family:$outfitFont;
+                            color: white;
+                          }
+                    }
+                   &:hover {
+                    transform: scale(1.1);
+                   }
+                }
+                .place-bid {
+                    display: flex;
+                    align-items: center;
+                    background: white;
+                    padding: 8px;
+                    width: 120px;
+                    justify-content: space-evenly;
+                    align-self: center;
+                    border-radius: 23px;
+                    transition: .7s ease-in;
+                    cursor: pointer;
+                    display:none;
+                    animation: text 1s;
+                    @keyframes text {
+                      from{
+                         
+                          margin-bottom:-25%;
+                      }
+                      to{
+                         
+                         margin-top:0px;
+                      }
+                    }
+                    .wallet {
+
+                        svg {
+                          width: 20px;
+                          fill: $fireSvg;
+                        }
+                    }
+                    .bid-btn {
+
+                        button {
+                            border: none;
+                            outline: none;
+                            background: transparent;
+                            color: $bidColor;
+                            cursor: pointer;
+                        }
+                    }
+                    &:hover {
+                        svg {fill:white}
+                        button {color: white}
+                        background: $fireSvg;
+                    }
+                }
+                .countdown {
+                  display: flex;
+                  align-items: center;
+                  background: $iconBack;
+                  width: 130px;
+                  justify-content: space-evenly;
+                  border-radius: 17px;
+                  padding: 5px;
+                  align-self: center;
+                    .fire-svg {
+
+                        svg {
+                          width: 20px;
+                          fill: $fireSvg;
+                        }
+                    }
+                    .timer {
+
+                        p {
+                          color: white;
+                          font-family: $outfitFont;
+                        }
+                    }
+                }
+            }
+                   
+                       .description {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding: 10px;
+                          .hamp {
+                            margin-right: 51px;
+                            h3 {
+                              color: white;
+                              font-family: $outfitFont;
+                              font-size: 18px;
+                              transition: .5s;
+                              &:hover {
+                                  color: $salColor;
+                              }
+                            }
+                          }
+                          .bsc {
+                               background: $hoverColor;
+                               padding: 3px 11px;
+                               border-radius: 12px;
+                            span {
+                                color: white;
+                                font-family: $outfitFont;
+                                font-size: 11px;
+                            }
+                          }
+                        }
+                       .holder {
+                        display: flex;
+                        align-items: center;
+                           .old-man {
+                            margin-right: 7px;
+                               img  {
+                                 border-radius: 17px;
+                               }
+                            }
+                            .for_custom {
+                                display: flex;
+                            
+                            .creation {
+                                margin-right: 48px;
+                                .creator {
+                                    p {
+                                     color: $creatorClr;
+                                     font-family: $outfitFont;
+                                    }
+                                }
+                                    .sal {
+                                        p {
+                                          color: white;  
+                                          font-family: $outfitFont;
+                                        }
+                                    }
+                                
+                            }
+                            .amount {
+                                .creator {
+                                    p {
+                                     color: $creatorClr;
+                                     font-family: $outfitFont;
+                                    }
+                                }
+                                    .sal {
+                                        p {
+                                          color: white;  
+                                          font-family: $outfitFont;
+                                        }
+                                    }
+                                
+                                }
+                        }
+                    }
+        }
+    }
+    }

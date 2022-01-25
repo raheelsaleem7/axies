@@ -1,0 +1,71 @@
+@import '../../Assests/Fonts/variable';
+
+.create {
+    padding: 37px 20px;
+    margin: 0 auto;
+    max-width: 1440px;
+    h2 {
+        color: white;
+        font-family: $outfitFont;
+        letter-spacing: 1px;
+        font-size: 36px;
+        @media screen and (max-width:480px) {
+            font-size: 15px;
+             }
+    }
+    .create_container {
+        padding: 41px 1px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @media screen and (max-width:480px) {
+          flex-wrap: wrap;
+             }
+
+        .create_inner {
+            line-height: 36px;
+            @media screen and (max-width:480px) {
+              margin-top: 20px;
+                 }
+        .img {
+
+            svg {
+                transition: all 0.8s ease;
+                &:hover {
+                    transform: rotateY(360deg);
+                }
+            }
+        }
+        h3 {
+            color: white;
+            font-family: $outfitFont;
+            font-size: 22px;
+            transition: .5s;
+            cursor: pointer;
+            @media screen and (max-width:480px) {
+                font-size: 21px;
+                 }
+            &:hover {
+                color: $buttonBorder;
+            }
+        }
+        p {
+            color: white;
+           font-family:$outfitFont;
+           font-size: 14px;
+           max-width: 306px;
+           line-height: 20px;
+           margin-top: 11px;
+           @media screen and (max-width:480px) {
+            font-size: 14px;
+            line-height: 15px;
+            max-width: 442px;
+             }
+        }
+        &:hover svg {
+            transform: rotateY(360deg);
+        }
+    }
+  
+    }
+}

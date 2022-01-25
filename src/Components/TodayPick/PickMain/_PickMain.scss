@@ -1,0 +1,260 @@
+@import '../../../Assests/Fonts/variable';
+@import '../../LiveAuction/AuctionList/AuctionList';
+ 
+ .pickmain {
+    .container {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        align-content: center;
+        justify-content: space-between;
+        padding: 18px;
+        @media screen and (max-width:480px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+         }
+         @media screen and (max-width:768px) {
+          display: flex;
+          flex-wrap: wrap;
+        
+           }
+         @media screen and (max-width:1024px) {
+          display: flex;
+          flex-wrap: wrap;
+        
+           }
+           @media screen and (max-width:1115px) {
+           
+            display: grid;
+            grid-template-columns: auto auto auto;
+          
+             }
+        .content {
+                 background: $iconBack;
+                 width: 298px;
+                 display: flex;
+                 margin-top:20px;
+                 flex-direction: column;
+                 align-items: center;
+                 padding: 15px 1px;
+                 height: 460px;
+                 border-radius: 17px;
+                 cursor: pointer;
+                 transition: .7s;
+                 overflow: hidden;
+                  &:hover {
+                  transform: scale(1.1); 
+                  }
+            .img-content {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                background-position: center;
+                background-repeat: no-repeat;
+                height: 278px;
+                width: 268px;
+                padding: 7px;
+                border-radius: 25px;
+      
+                .health {
+                    display: flex;
+                    background: $priceColor;
+                    width: 64px;
+                    align-items: end;
+                    padding: 5px;
+                    justify-content: space-evenly;
+                    border-radius: 8px;
+                    align-self: self-end;
+                    .heart-icon {
+
+                        svg {
+                          width: 14px;
+                          fill: white;
+                        }
+                    }
+                    .number {
+                        p {
+                            font-family:$outfitFont;
+                            color: white;
+                          }
+                    }
+                   &:hover {
+                    transform: scale(1.1);
+                   }
+                }
+            }
+                   
+                       .description {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding: 10px;
+                          .hamp {
+                            margin-right: 51px;
+                            h3 {
+                              color: white;
+                              font-family: $outfitFont;
+                              font-size: 16px;
+                              transition: .5s;
+                              &:hover {
+                                  color: $salColor;
+                              }
+                            }
+                          }
+                          .bsc {
+                               background: $hoverColor;
+                               padding: 3px 11px;
+                               border-radius: 12px;
+                            span {
+                                color: white;
+                                font-family: $outfitFont;
+                                font-size: 11px;
+                            }
+                          }
+                        }
+                       .holder {
+                        display: flex;
+                        align-items: center;
+                           .old-man {
+                            margin-right: 7px;
+                               img  {
+                                 border-radius: 17px;
+                                 width: 60px;
+                               }
+                            }
+                            .for_custom {
+                                display: flex;
+                            
+                            .creation {
+                                margin-right: 48px;
+                                .creator {
+                                    p {
+                                     color: $creatorClr;
+                                     font-family: $outfitFont;
+                                     font-weight: 600;
+                                    }
+                                }
+                                    .sal {
+                                        p {
+                                          color: white;  
+                                          font-family: $outfitFont;
+                                          font-weight: 600;
+                                          font-size: 14px
+                                        }
+                                    }
+                                
+                            }
+                            .amount {
+                                .creator {
+                                    p {
+                                     color: $creatorClr;
+                                     font-family: $outfitFont;
+                                    }
+                                }
+                                    .sal {
+                                        p {
+                                          color: white;  
+                                          font-family: $outfitFont;
+                                        }
+                                    }
+                                
+                                }
+                        }
+                    }
+                    .place_footer {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        margin-top: 18px;
+                    .place-bid {
+                        display: flex;
+                        align-items: center;
+                        background: transparent;
+                        padding: 8px;
+                        width: 120px;
+                        border: 2px solid $salColor;
+                        justify-content: space-evenly;
+                        align-self: center;
+                        border-radius: 23px;
+                        transition: .7s ease-in;
+                        cursor: pointer;
+                       
+                        .wallet {
+    
+                            svg {
+                              width: 20px;
+                              fill: white;
+                            }
+                        }
+                        .bid-btn {
+    
+                            button {
+                                border: none;
+                                outline: none;
+                                background: transparent;
+                                color: white;
+                                cursor: pointer;
+                            }
+                        }
+                        &:hover {
+                            svg {fill:$salColor}
+                            button {color: $bidColor}
+                            background: white;
+                          
+                        }
+                    }
+                    .category {
+                        display: flex;
+                        border: none;
+                        justify-content: space-between;
+                        padding: 9px 16px;
+                        border-radius: 25px;
+                        margin-left: 28px;
+                        cursor: pointer;
+                         .svg-icon {
+                             margin-right: 12px;
+                             svg {
+                                fill: white;
+                                width: 16px;
+                             }
+                         }
+                         .content_name {
+                             
+                           button {
+                                color: white;
+                                font-family: $outfitFont;
+                                font-size: 15px;
+                                border: none;
+                                outline: none;
+                                background:transparent;
+                         }
+                       }
+                     }
+                    }
+        }
+    }
+                            .load_btn {
+                              text-align: center;
+                              padding: 20px;
+                              button {
+                              
+                                outline: none;
+                                background: transparent;
+                                border: 2px solid white;
+                                font-family: $outfitFont;
+                                font-weight: 900;
+                                color: white;
+                                transition: .7s;
+                                padding: 16px 43px;
+                                border-radius: 54px;
+                                cursor: pointer;
+                                &:hover {
+                                  background: white;
+                                  color: black;
+                                
+                                }
+                              }
+                            }
+    }
+
+ 

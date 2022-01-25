@@ -1,0 +1,75 @@
+@import '../../Assests/Fonts/variable';
+
+.topseller {
+    margin: 0 auto;
+    max-width: 1440px;
+    padding: 17px;
+    h2 {
+        font-family:$outfitFont;
+        color: white;
+        @media screen and (max-width:480px) {
+            font-size: 15px;
+       }
+    }
+    .seller_container {
+        padding: 22px;
+        display: flex;
+        justify-content: space-between;
+        @media screen and (max-width:480px) {
+           flex-wrap: wrap;
+       }
+       @media screen and (max-width:768px) {
+       display: grid;
+       grid-template-columns: auto auto auto;
+    }
+       
+        .for_sellers {
+            text-align: center;
+            .for_img {
+
+           img {
+            border-radius: 42px;
+           }
+           .badge {
+            display: inline-block;
+            width: 18px;
+            height: 18px;
+            line-height: 18px;
+            object-fit: cover;
+            text-align: center;
+            border-radius: 50%;
+            background-color:$salColor;
+            padding: 0 !important;
+            position: relative;
+            right: 26px;
+
+               &::after {
+               
+               }
+           }
+        }
+            .desciption {
+                line-height: 26px;
+               p {
+            font-family:$outfitFont;
+            color: white;
+            font-weight: 600;
+            font-size: 17px;
+            transition: .5s;
+            cursor: pointer;
+            &:hover {
+                color: $salColor;
+            }
+           }
+           span {
+            color: $ethColor;
+            font-family:$outfitFont;
+            font-size: 15px;
+           }
+        
+        }
+    }
+ }
+}
+
+    

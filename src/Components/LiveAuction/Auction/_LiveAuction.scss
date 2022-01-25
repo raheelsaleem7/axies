@@ -1,0 +1,82 @@
+@import '../../../Assests/Fonts/variable';
+
+.live-auction {
+
+    .live-container {
+        margin: 0 auto;
+        max-width: 1440px;
+        .live-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            .live {
+               
+                h2 {
+                    color: white;
+                    font-family: $outfitFont;
+                    font-size: 30px;
+                    letter-spacing: 1px;
+                    @media screen and (max-width:480px) {
+                         font-size: 15px;
+                    }
+                }
+            }
+            .explore {
+                    p {
+                        font-weight: bold;
+                        font-size: 14px;
+                        line-height: 20px;
+                        letter-spacing: 0.1em;
+                        font-family: $latoFont;
+                        text-decoration: none;
+                        color: white;
+                        cursor: pointer;
+                        @media screen and (max-width:480px) {
+                            font-size: 10px;
+                       }
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            right: 9px;
+                            bottom: -157px;
+                            width: 123px;
+                             height: 1px;
+                            background: linear-gradient( 216.56deg , #E250E5 5.32%, #4B50E6 94.32%);
+                            @media screen and (max-width:480px) {
+                                bottom: 230px;
+                                width: 89px;
+                            }
+                            @media screen and (max-width:768px) {
+                                bottom: 230px;
+                                width: 89px;
+                            }
+                        }
+                        &:hover {
+                            background: linear-gradient(to right, #E250E5,#4B50E6,#E250E5);
+                            background-clip: text;
+                            -webkit-background-clip: text;
+                            font-weight: 700;
+                            background-size: 200% 200%;
+                            animation: rainbow 2s ease-in-out infinite;
+                            color: var(--primary-color2);
+                            transition: color .2s ease-in-out;
+                            @keyframes rainbow {
+                                0% {
+                                    background-position: left;
+                                }
+                                50% {
+                                    background-position: right;
+                                }
+                                100% {
+                                    background-position: left;
+                                }
+                            }
+                        }
+                        
+                    }
+                
+            }
+        }
+    }
+}
